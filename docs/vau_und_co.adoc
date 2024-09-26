@@ -3,7 +3,7 @@
 Die folgende Abbildung zeigt die Hauptkonzepte in der ePA-Sicherheitsarchitektur. Es lässt u.a. erkennen, wie das VAU-Kanal-Protokoll innerhalb einer TLS-Verbindung vom Primärsystem aus Richtung Aktensystem (Aktenkontoverwaltungs-VAU) verwendet wird. Weitere Details finden sich weiter unten.
 Die Informationen auf dieser Seite gehen näher auf den Aufbau des VAU-Kanals ein und die Etablierung von User Sessions (nicht abgebildet) innerhalb der VAU.
 
-image::images/sicherheitsarchitektur.png[]
+image::../images/sicherheitsarchitektur.png[]
 
 
 == Dienste ohne VAU-Kanal
@@ -139,4 +139,4 @@ Es gilt:
 
 Noch eine Abbildung zum Zusammenhang zwischen VAU-Instanzen und Health Record Contexts:
 
-image:images/vau_instanzen_und_health_record_context.png[]
+image:../images/vau_instanzen_und_health_record_context.png[]
