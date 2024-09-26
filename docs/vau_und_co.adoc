@@ -12,6 +12,7 @@ Inhalt dieser Seite:
     *** <<_wer_baut_einen_vau_kanal_auf,Wer baut einen VAU-Kanal auf?>>
     *** <<_wann_soll_ich_den_vau_kanal_öffnen,Wann soll ich den VAU-Kanal öffnen?>>
     *** <<_wann_soll_ich_eine_user_session_aufbauen,Wann soll ich eine User Session aufbauen>>
+    *** <<_weitere_möglichkeiten_zur_ressourcenschonunglatenzoptimierung,Weitere Möglichkeiten zu Ressourcenschonung/Latenzoptimierung>>
     *** <<_beispielimplementierungen_vau_kanal, Beispielimplementierungen VAU-Kanal>>
   ** <<_behandlungskontext_registrieren,Behandlungskontext registrieren>>
   ** <<_weiterführende_informationen_vau_und_vau_instanzen,Weiterführende Informationen VAU und VAU-Instanzen>>
@@ -48,7 +49,6 @@ Die Schnittstellen zur Aktenkontolokalisierung und den UX-Daten sind nicht in de
 * Innerhalb des VAU-Kanals wird eine User Session gebaut
 ** Innerhalb User Session können auf verschiedene Aktenkonten zugegriffen werden
 ** Innerhalb der User Session werden im Aktensystem sogenannte Health Record Contexts eröffnet (Für ePA-Client jedoch transparent, d.h. sie müssen nicht aktiv im ePA-Client verwaltet werden)
-
 
 === Wer baut einen VAU-Kanal auf?
 
@@ -87,7 +87,7 @@ Die Schnittstellen zur Aktenkontolokalisierung und den UX-Daten sind nicht in de
 *** Die Aktensysteme sollten so ausgelegt sein, dass sie mit einer großen Menge an offenen VAU-Kanälen der PVS zurechtkommen.
 *** Behalten Sie jedoch im Hinterkopf, dass Sie in der Regel (ausgenommen Proxy-Szenario) mit einem oder sehr wenigen VAU-Kanälen pro PVS auskommen.
 
-=== Weitere Hinweise zur Ressourcenschonung/Latenzoptimierung
+=== Weitere Möglichkeiten zur Ressourcenschonung/Latenzoptimierung
 
 * Generell darauf zu achten, dass Anzahl der Verbindungen (TCP) auf das notwendige Maß reduziert wird.
 * Einsatz von TCP Keep-Alive-Mechanismen, um Verbindungen stabil zu halten, ohne unnötigen Traffic zu erzeugen.
