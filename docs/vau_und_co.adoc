@@ -87,6 +87,17 @@ Die Schnittstellen zur Aktenkontolokalisierung und den UX-Daten sind nicht in de
 *** Die Aktensysteme sollten so ausgelegt sein, dass sie mit einer großen Menge an offenen VAU-Kanälen der PVS zurechtkommen.
 *** Behalten Sie jedoch im Hinterkopf, dass Sie in der Regel (ausgenommen Proxy-Szenario) mit einem oder sehr wenigen VAU-Kanälen pro PVS auskommen.
 
+=== Weitere Hinweise zur Ressourcenschonung/Latenzoptimierung
+
+* Generell darauf zu achten, dass Anzahl der Verbindungen (TCP) auf das notwendige Maß reduziert wird.
+* Einsatz von TCP Keep-Alive-Mechanismen, um Verbindungen stabil zu halten, ohne unnötigen Traffic zu erzeugen.
+* Für den Aufbau zusätzlicher und abgebauter Verbindungen soll TLS Session Resumption zum Einsatz kommen.
+* Unnötige Kommunikation ist zu vermeiden, z.b. OSCP-Abfragen:
+
+  "Ein ePA-Client MUSS in seiner TLS-Implementierung OCSP-Stapling unterstützen und die dort aufgeführten OCSP-Responses verwenden."
+  -- gemSpec_Krypt, A_24913
+
+
 === Beispielimplementierungen VAU-Kanal
 
 Beispielimplementierungen finden sich hier:
