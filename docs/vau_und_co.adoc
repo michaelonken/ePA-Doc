@@ -5,17 +5,17 @@ Inhalt dieser Seite:
 // TOC muss manuell gepflegt werden... :/
 
 * <<_überblick_sicherheitsarchitektur,Überblick Sicherheitsarchitektur>>
-  ** <<_einleitung,Einleitung>>
-  ** <<_dienste_ohne_vau_kanal,Dienste ohne VAU-Kanal>>
-  ** <<_vau_kanalnutzung_durch_primärsysteme,VAU-Kanalnutzung durch Primärsysteme>>
-    *** <<_was_ist_der_vau_kanal,Was ist der VAU-Kanal>>
-    *** <<_wer_baut_einen_vau_kanal_auf,Wer baut einen VAU-Kanal auf?>>
-    *** <<_wann_soll_ich_den_vau_kanal_öffnen,Wann soll ich den VAU-Kanal öffnen?>>
-    *** <<_wann_soll_ich_eine_user_session_aufbauen,Wann soll ich eine User Session aufbauen>>
-    *** <<_weitere_möglichkeiten_zur_ressourcenschonung_latenzoptimierung,Weitere Möglichkeiten zu Ressourcenschonung/Latenzoptimierung>>
-    *** <<_beispielimplementierungen_vau_kanal, Beispielimplementierungen VAU-Kanal>>
-  ** <<_behandlungskontext_registrieren,Behandlungskontext registrieren>>
-  ** <<_weiterführende_informationen_vau_und_vau_instanzen,Weiterführende Informationen VAU und VAU-Instanzen>>
+  ** <<Einleitung>>
+  ** <<Dienste ohne VAU-Kanal>>
+  ** <<VAU-Kanalnutzung durch Primärsysteme>>
+    *** <<Was ist der VAU-Kanal>>
+    *** <<Wer baut einen VAU-Kanal auf?>>
+    *** <<Wann soll ich den VAU-Kanal öffnen?>>
+    *** <<Wann soll ich eine User Session aufbauen?>>
+    *** <<Weitere Möglichkeiten zur Ressourcenschonung/Latenzoptimierung>>
+    *** <<Beispielimplementierungen VAU-Kanal>>
+  ** <<Behandlungskontext registrieren>>
+  ** <<Weiterführende Informationen VAU und VAU-Instanzen>>
 
 == Einleitung
 
