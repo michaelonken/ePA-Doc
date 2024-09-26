@@ -1,8 +1,22 @@
 = Überblick Sicherheitsarchitektur
 
-:toc:
-:toc-placement!:
-toc::[]
+Inhalt dieser Seite:
+
+// TOC muss manuell gepflegt werden... :/
+
+* <<_überblick_sicherheitsarchitektur,Überblick Sicherheitsarchitektur>>
+  ** <<_einleitung,Einleitung>>
+  ** <<_dienste_ohne_vau_kanal,Dienste ohne VAU-Kanal>>
+  ** <<_vau_kanalnutzung_durch_primärsysteme,VAU-Kanalnutzung durch Primärsysteme>>
+    *** <<_was_ist_der_vau_kanal,Was ist der VAU-Kanal>>
+    *** <<_wer_baut_einen_vau_kanal_auf,Wer baut einen VAU-Kanal auf?>>
+    *** <<_wann_soll_ich_den_vau_kanal_öffnen,Wann soll ich den VAU-Kanal öffnen?>>
+    *** <<_wann_soll_ich_eine_user_session_aufbauen,Wann soll ich eine User Session aufbauen>>
+    *** <<_beispielimplementierungen_vau_kanal, Beispielimplementierungen VAU-Kanal>>
+  ** <<_behandlungskontext_registrieren,Behandlungskontext registrieren>>
+  ** <<_weiterführende_informationen_vau_und_vau_instanzen,Weiterführende Informationen VAU und VAU-Instanzen>>
+
+== Einleitung
 
 Die folgende Abbildung zeigt die Hauptkonzepte in der ePA-Sicherheitsarchitektur. Es lässt u.a. erkennen, wie das VAU-Kanal-Protokoll innerhalb einer TLS-Verbindung vom Primärsystem aus Richtung Aktensystem (Aktenkontoverwaltungs-VAU) verwendet wird. Weitere Details finden sich weiter unten.
 Die Informationen auf dieser Seite gehen näher auf den Aufbau des VAU-Kanals ein und die Etablierung von User Sessions (nicht abgebildet) innerhalb der VAU.
@@ -82,25 +96,6 @@ Beispielimplementierungen finden sich hier:
 * https://bitbucket.org/andreas_hallof/vau-protokoll/src/master/minimal/[PoC in Python]
 * https://github.com/gematik/zero-lab/tree/vau/pkg/libvau[PoC in GO]
 
-
-== Aktenkontolokalisierung
-
-* Jedes Aktenkonto liegt auf einem der beiden Aktensysteme
-* Das richtige Aktensystem bringt man mit der Lokalisierung des Aktenkontos in Erfahrung (getRecordStatus())
-* Ist ein Aktenkonto einmal lokalisiert, MUSS die Information, in welchem Aktensystem das Konto liegt, gecached werden
-* Achtung: Das Aktensystem für ein Konto ändert sich sehr selten, aber es kann sich   ändern
-**Aktenumzug (Wechsel der Krankenkasse)
-**In diesem Fall (Fehler beim Zugriff auf das Aktenkonto) muss getRecordStatus() erneut aufgerufen werden (auf dem zweiten Aktensystem)
-* Tipp:
-** Wenn ein Versicherter einer bestimmten Krankenkasse bei einem bestimmten Aktensystem liegt, liegen auch die anderen Aktenkonten derselben Krankenkasse bei demselben Aktensystem
-** Es reicht also in aller Regel sogar aus, zu cachen, welche "IK-Nummer" (Krankenkasse) ihre Konten auf welchem Aktensystem verwaltet, um ein bestimmtes Aktenkonto zu lokalisieren
-* FQDNs:
-** RU-DEV
-*** IBM: epa-as-1.dev.epa4all.de
-*** BITMARCK: epa-as-2.dev.epa4all.de
-** RU-REF
-*** IBM: epa-as-1.ref.epa4all.de
-*** BITMARCK: epa-as-2.ref.epa4all.de
 
 == Behandlungskontext registrieren
 
