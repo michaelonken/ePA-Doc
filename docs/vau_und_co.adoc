@@ -12,7 +12,7 @@ Inhalt dieser Seite:
     *** <<_wer_baut_einen_vau_kanal_auf,Wer baut einen VAU-Kanal auf?>>
     *** <<_wann_soll_ich_den_vau_kanal_öffnen,Wann soll ich den VAU-Kanal öffnen?>>
     *** <<_wann_soll_ich_eine_user_session_aufbauen,Wann soll ich eine User Session aufbauen>>
-    *** <<_weitere_möglichkeiten_zur_ressourcenschonunglatenzoptimierung,Weitere Möglichkeiten zu Ressourcenschonung/Latenzoptimierung>>
+    *** <<_weitere_möglichkeiten_zur_ressourcenschonung_latenzoptimierung,Weitere Möglichkeiten zu Ressourcenschonung/Latenzoptimierung>>
     *** <<_beispielimplementierungen_vau_kanal, Beispielimplementierungen VAU-Kanal>>
   ** <<_behandlungskontext_registrieren,Behandlungskontext registrieren>>
   ** <<_weiterführende_informationen_vau_und_vau_instanzen,Weiterführende Informationen VAU und VAU-Instanzen>>
