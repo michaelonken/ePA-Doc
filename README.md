@@ -11,4 +11,3 @@ Aktuell sind nur wenige Seiten hinterlegt; wir planen jedoch, die Dokumentation 
 
 - [VAU-Protokoll, User Sessions und Health Record Contexts](docs/vau_und_co.adoc)
 - [Aktenkontolokalisierung](docs/aktenkontolokalisierung.adoc)
--
